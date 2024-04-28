@@ -1,0 +1,32 @@
+{
+  "name": "nextzy-por-dev",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.ts",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "helmet": "^7.1.0",
+    "joi": "^17.13.0",
+    "mongodb": "^6.5.0",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "uuid": "^9.0.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/uuid": "^9.0.8",
+    "typescript": "^5.4.5"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "ts-node-dev src/server.ts",
+    "start:debug": "ts-node-dev --transpile-only --respawn --inspect=4000 --project tsconfig.json src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Suppakrit.P",
+  "license": "ISC"
+}
